@@ -200,7 +200,7 @@ class MyFirstPlugin:
             # substitute with your code.
             # Example functionality: print a message to the console
             layer = self.iface.activeLayer()
-                if layer:
-                    QgsMessageLog.logMessage(f"Active layer: {layer.name()}", "MyFirstPlugin")
-                else:
-                    QgsMessageLog.logMessage("No active layer found.", "MyFirstPlugin")
+            if layer:
+                QgsMessageLog.logMessage(f"Active layer: {layer.name()}", "MyFirstPlugin")
+            else:
+                QgsMessageLog.logMessage("No active layer found.", "MyFirstPlugin")
